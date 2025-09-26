@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PharmaExpress</title>
+  <style>
+    body { font-family: Arial; margin: 0; padding: 0; background: #f2f2f2; }
+    header { background: teal; color: white; padding: 20px; text-align: center; }
+    .container { padding: 20px; }
+    .medicine { background: white; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+    .medicine h3 { margin: 0; }
+    .order-btn { background: teal; color: white; border: none; padding: 10px; cursor: pointer; margin-top: 10px; }
+    .order-btn:hover { background: darkcyan; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PharmaExpress 🚚</h1>
+  <p>Fast & Reliable Medicine Delivery</p>
+</header>
+
+<div class="container">
+  <div class="medicine">
+    <h3>Paracetamol 500mg</h3>
+    <p>Price: ₹25</p>
+    <button class="order-btn" onclick="order('Paracetamol')">Order Now</button>
+  </div>
+
+  <div class="medicine">
+    <h3>Amoxicillin 250mg</h3>
+    <p>Price: ₹60</p>
+    <button class="order-btn" onclick="order('Amoxicillin')">Order Now</button>
+  </div>
+
+  <div class="medicine">
+    <h3>Cetirizine 10mg</h3>
+    <p>Price: ₹15</p>
+    <button class="order-btn" onclick="order('Cetirizine')">Order Now</button>
+  </div>
+</div>
+
+<script>
+  function order(medicine) {
+    alert("Order placed for " + medicine + "! We'll deliver it soon.");
+  }
+</script>
+
+</body>
+</html>
